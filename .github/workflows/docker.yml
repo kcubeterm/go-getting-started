@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: kcubeterm/go-getting-started@V1.0 # This is the action
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
           heroku_app_name: "krishnanhaiya" #Must be unique in Heroku
           heroku_email: "kcubeterm@gmail.com"
           #buildpack: "SOME BUILDPACK" #OPTIONAL
